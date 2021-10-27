@@ -1,0 +1,75 @@
+/* Ajustando la pagina a telefono  */
+*{
+	transition:.1s ease all;
+}
+div.Menu-Phone{position:absolute;width:100%;height:100%;background-color:#292a2d;bottom:0;display:none;}
+@media only screen and (max-width:1200px){
+	div.LogoTexto{
+		display:none;
+	}
+	div.SearchBar{
+		left:15%;
+		width:68%;
+	}
+	p.was{
+		content: 'asfasfas';
+	}
+	div.botones{
+		top:10px;
+	}
+	.HerramientasToolBox{
+		display:none;
+	}
+	div.Nuevo{
+		left:0;
+		width:100%;
+		height:100%;
+	}
+	div.Handler{
+		height:85%;
+	}
+	div.Handler2{
+		height:85%;
+	}
+}
+button.mp4{
+	position:absolute;
+	width:90%;
+	left:5%;
+	top:78px;
+	border:0px none transparent;
+	font-family:arial black;
+}
+button.twits{
+	position:absolute;
+	width:90%;
+	left:5%;
+	top:150px;
+	border:0px none transparent;
+	font-family:arial black;
+}
+button.ide{
+	position:absolute;
+	width:90%;
+	left:5%;
+	top:225px;
+	border:0px none transparent;
+	font-family:arial black;
+}
+button.Element{
+	position:absolute;
+	width:90%;
+	left:5%;
+	top:300px;
+	border:0px none transparent;
+	font-family:arial black;
+}
+button.Cerrar{
+	position:absolute;
+	width:90%;
+	left:5%;
+	top:380px;
+	border:0px none transparent;
+	font-family:arial black;
+	background:#812828;
+}
