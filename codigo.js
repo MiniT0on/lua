@@ -73,6 +73,8 @@ do{
 }
 while (document.title == tittlePage);
 
+$(consejo).text("Post subidos");
+
 $(document).ready(function(){
 	print('Termino de cargar el DOM!');
 	$("#btnGame").click(function(){
@@ -86,9 +88,15 @@ $(document).ready(function(){
 	$("#close").click(function(){
 	$(".Menu-Phone").css("display", "none");
 });
-
-$(consejo).text("Post subidos");
-
+		
+});
+	$(window).resize(()=>{
+			if ($(window).width() <= number) {
+			print(number);
+		}else{
+			$(".Menu-Phone").css("display", "none");
+		};
+	});
 $("#wideoURL").click(()=>{
 	window.open("https://www.youtube.com/channel/UCvDGmkWohXcqaQMDw4qEdiA", "_blank");
 });
@@ -144,12 +152,3 @@ $("#uno").click(function(){
 	});
 	
 });
-	
-});
-	$(window).resize(()=>{
-			if ($(window).width() <= number) {
-			print(number);
-		}else{
-			$(".Menu-Phone").css("display", "none");
-		};
-	});
