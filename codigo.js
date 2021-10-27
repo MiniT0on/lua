@@ -2,9 +2,20 @@ let game = document, Player = window;
 let consejo = document.querySelector(".Sacha");
 let tittlePage = "un cafesito con lua"
 document.title = tittlePage;
+
+const print = (Mensaje)=>{
+	console.log(Mensaje);
+};
+
 let buttonArg = {
 	Menu: document.querySelector('.menu'),
 };
+
+if(localStorage.getItem('MenuWOP'){
+   localStorage.setItem('MenuWOP', 'si')
+}else{
+	print("Ya existe!")
+}
 
 if (localStorage.getItem('MenuWOP') == 'si' ) {
 	document.querySelector('.HerramientasToolBox').style.width = "15%";
@@ -14,10 +25,6 @@ if (localStorage.getItem('MenuWOP') == 'si' ) {
 	document.querySelector('.HerramientasToolBox').style.width = "0.1%";
 	$(".botones").css('display', 'none');
 	$(".Cartel").css('display', 'none');
-};
-
-const print = (Mensaje)=>{
-	console.log(Mensaje);
 };
 
 let CodeBar = document.querySelector("#BuscarCode")
