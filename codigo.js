@@ -77,15 +77,13 @@ $(document).ready(function(){
 			alert("No es un numero lo que insertastes");
 		};
 	});
-});
-
-$(window).resize(()=>{
-	if ($(window).width() <= number) {
-		print(number);
-	}else{
-		$(".Menu-Phone").css("display", "none");
-	};
-});
+	$(window).resize(()=>{
+			if ($(window).width() <= number) {
+			print(number);
+		}else{
+			$(".Menu-Phone").css("display", "none");
+		};
+	});
 
 $("#close").click(function(){
 	$(".Menu-Phone").css("display", "none");
@@ -103,46 +101,48 @@ $("#uno").click(function(){
 	window.open("https://www.youtube.com/channel/UCvDGmkWohXcqaQMDw4qEdiA", "_blank");
 });
 
-$("#dos").click(function(){
-	if (document.querySelector(".Handler").style.display == "block") {
-		alert("Esta pagina ya esta abierta");
-	}else{
-		document.querySelector(".Handler").style.display = "block";
-		document.querySelector(".Handler2").style.display = "none";
-		$(consejo).text("Post subidos");
-	};
+	$("#dos").click(function(){
+		if (document.querySelector(".Handler").style.display == "block") {
+			alert("Esta pagina ya esta abierta");
+		}else{
+			document.querySelector(".Handler").style.display = "block";
+			document.querySelector(".Handler2").style.display = "none";
+			$(consejo).text("Post subidos");
+		};
+	});
+
+	$("#tres").click(function(){
+		if (document.querySelector(".Handler2").style.display == "block") {
+			alert("Esta pagina ya esta abierta");
+		}else{
+			document.querySelector(".Handler").style.display = "none";
+			document.querySelector(".Handler2").style.display = "block";
+			$(consejo).text("IDE subidas")
+		};
+	});
+
+	// Esto es para el telefono :3
+
+	$("#PosRT").click(function(){
+		if (document.querySelector(".Handler").style.display == "block") {
+			alert("Esta pagina ya esta abierta");
+		}else{
+			document.querySelector(".Handler").style.display = "block";
+			document.querySelector(".Handler2").style.display = "none";
+			$(consejo).text("Post subidos");
+			$(".Menu-Phone").css("display", "none");
+		};
+	});
+
+	$("#IDEWE").click(function(){
+		if (document.querySelector(".Handler2").style.display == "block") {
+			alert("Esta pagina ya esta abierta");
+		}else{
+			document.querySelector(".Handler").style.display = "none";
+			document.querySelector(".Handler2").style.display = "block";
+			$(consejo).text("IDE subidas");
+			$(".Menu-Phone").css("display", "none");
+		};
+	});
+	
 });
-
-$("#tres").click(function(){
-	if (document.querySelector(".Handler2").style.display == "block") {
-		alert("Esta pagina ya esta abierta");
-	}else{
-		document.querySelector(".Handler").style.display = "none";
-		document.querySelector(".Handler2").style.display = "block";
-		$(consejo).text("IDE subidas")
-	};
-});
-
-// Esto es para el telefono :3
-
-$("#PosRT").click(function(){
-	if (document.querySelector(".Handler").style.display == "block") {
-		alert("Esta pagina ya esta abierta");
-	}else{
-		document.querySelector(".Handler").style.display = "block";
-		document.querySelector(".Handler2").style.display = "none";
-		$(consejo).text("Post subidos");
-		$(".Menu-Phone").css("display", "none");
-	};
-});
-
-$("#IDEWE").click(function(){
-	if (document.querySelector(".Handler2").style.display == "block") {
-		alert("Esta pagina ya esta abierta");
-	}else{
-		document.querySelector(".Handler").style.display = "none";
-		document.querySelector(".Handler2").style.display = "block";
-		$(consejo).text("IDE subidas");
-		$(".Menu-Phone").css("display", "none");
-	};
-}); 
