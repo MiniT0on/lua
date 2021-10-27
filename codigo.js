@@ -145,4 +145,4 @@ $("#IDEWE").click(function(){
 		$(consejo).text("IDE subidas");
 		$(".Menu-Phone").css("display", "none");
 	};
-});
+}); 
