@@ -84,12 +84,12 @@ $(document).ready(function(){
 			Kick();
 		}else{
 			alert("No es un numero lo que insertastes");
-		};
-	$("#close").click(function(){
+		};		
+});
+$("#close").click(function(){
 	$(".Menu-Phone").css("display", "none");
 });
-		
-});
+
 	$(window).resize(()=>{
 			if ($(window).width() <= number) {
 			print(number);
