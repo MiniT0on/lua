@@ -12,9 +12,9 @@ let buttonArg = {
 };
 
 if(localStorage.getItem('MenuWOP'){
-   localStorage.setItem('MenuWOP', 'si')
+	print("Ya existe!");
 }else{
-	print("Ya existe!")
+	localStorage.setItem('MenuWOP', 'si');
 }
 
 if (localStorage.getItem('MenuWOP') == 'si' ) {
