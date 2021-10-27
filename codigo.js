@@ -76,16 +76,7 @@ $(document).ready(function(){
 		}else{
 			alert("No es un numero lo que insertastes");
 		};
-	});
-	$(window).resize(()=>{
-			if ($(window).width() <= number) {
-			print(number);
-		}else{
-			$(".Menu-Phone").css("display", "none");
-		};
-	});
-
-$("#close").click(function(){
+	$("#close").click(function(){
 	$(".Menu-Phone").css("display", "none");
 });
 
@@ -146,3 +137,12 @@ $("#uno").click(function(){
 	});
 	
 });
+	
+});
+	$(window).resize(()=>{
+			if ($(window).width() <= number) {
+			print(number);
+		}else{
+			$(".Menu-Phone").css("display", "none");
+		};
+	});
