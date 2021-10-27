@@ -11,11 +11,11 @@ let buttonArg = {
 	Menu: document.querySelector('.menu'),
 };
 
-if(localStorage.getItem('MenuWOP'){
+if(localStorage.getItem('MenuWOP')){
 	print("Ya existe!");
 }else{
 	localStorage.setItem('MenuWOP', 'si');
-}
+};
 
 if (localStorage.getItem('MenuWOP') == 'si' ) {
 	document.querySelector('.HerramientasToolBox').style.width = "15%";
